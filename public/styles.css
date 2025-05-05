@@ -1,0 +1,548 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2a9d8f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin: 0;
+    font-weight: bold;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #2a9d8f;
+    margin-bottom: 20px;
+}
+
+/* Registration Container */
+.reg-container {
+    max-width: 500px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* User Grid */
+.user-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.user-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+}
+
+.user-card h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    color: #2a9d8f;
+}
+
+.user-card p {
+    margin: 6px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sections */
+.section {
+    padding: 40px;
+    background-color: #fff;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 1000px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Items Grid */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.item-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction:  column;
+    gap: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    align-items: center;
+  }
+
+  .item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  .item-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .item-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .item-card .category {
+    font-size: 0.85rem;
+    background-color: #f0f4f8;
+    padding: 6px 12px;
+    border-radius: 12px;
+    width: fit-content;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .item-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+.item-details {
+    color: #333;
+}
+
+.item-details h3 {
+    font-size: 1.5rem;
+    color: #2a9d8f;
+    margin-bottom: 10px;
+}
+
+.item-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.item-card .view-details-btn {
+  align-self: flex-start;
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-card .view-details-btn:hover {
+    background-color: #2980b9;
+  }
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a9d8f;
+    padding: 5px 30px;
+    align-items: center;
+    min-height: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.navbar .btn {
+    background-color: #fff;
+    color: #2a9d8f;
+    padding: 6px 14px;
+    border: 2px solid #2a9d8f;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .btn:hover {
+    background-color: #e0e0e0;
+    color: #2a9d8f;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styling (match other buttons) */
+.dropdown > a {
+    background-color: #fff;
+    color: #2a9d8f;
+    padding: 6px 14px;
+    border: 2px solid #2a9d8f;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.dropdown > a:hover {
+    background-color: #e0e0e0;
+    color: #2a9d8f;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #2a9d8f;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    margin-left: 5px;
+    font-size: 0.8em;
+    vertical-align: middle;
+}
+
+/* Style the dropdown button when hovering */
+.dropdown:hover .dropdown-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+/* Login Form */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.login-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container .form-group {
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 6px;
+    outline: none;
+}
+
+.login-container input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #2a9d8f;
+}
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-btn {
+    color:#2a9d8f;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    text-decoration: underline;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 80vh;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Soft shadow around modal */
+    overflow-y: auto; /* Ensure vertical scroll appears when content overflows */
+}
+
+/* Modal Body */
+.modal-body {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* Image */
+.modal-body img {
+    margin-top: 100px;
+    flex: 0 0 33.33%;
+    max-width: 400px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Details Section */
+.modal-info {
+    margin-right: 5px;
+    flex: 0 0 66.66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9fafb; /* Light background */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Details shadow */
+    overflow-y: auto; /* Allow scrolling within the details section */
+}
+
+/* Title of Modal Info */
+.modal-info h3 {
+    color: #333;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#map {
+    height: 200px; /* Adjust height as needed */
+    width: 400px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Textarea Styling */
+.modal-info textarea {
+    width: 400px;
+    padding: 12px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    min-height: 80px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+.modal-info button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    max-width: 300px;
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-info button:hover {
+    background: #005f45;
+    transform: translateY(-2px);
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #e74c3c; /* Red color on hover */
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Book Button */
+.book-btn-card,
+#book-btn {
+    background-color: #2a9d8f;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book-btn-card:hover,
+#book-btn:hover {
+    background-color: #09554c;
+    transform: translateY(-2px); /* Lift effect */
+}
+
